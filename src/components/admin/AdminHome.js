@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Header extends Component {
+class AdminHome extends Component {
     render() {
         return (
             <div>
-                7
+                AOFIDUHWOIFWEIOHF
             </div>
         );
     }
 }
 
-export default Header;
+export default AdminHome;

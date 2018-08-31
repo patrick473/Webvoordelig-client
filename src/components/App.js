@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactBody from 'react-body';
 import Customer from "./Customer";
 import Admin from "./Admin";
 import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
@@ -8,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div>
-      
+      <ReactBody className="nopadding"/>
       <Router>
      
     

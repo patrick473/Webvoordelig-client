@@ -1,0 +1,28 @@
+.sidebar{
+    width:18rem;
+    background-color: $color-dark-shades;
+    color: $color-white;
+    font-size:1.3rem;
+    font-weight: 500;
+    height:100%;
+    top:0;
+    left:0;
+    padding-top:15vh;
+    padding-left:1rem;
+
+    position: fixed;
+
+    &__item{
+
+        &,
+        &:link,
+        &:visited{
+            border-bottom: 2px solid rgba($color-white,.8);
+            display:block;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: $color-white;
+        }
+        
+    }
+}
