@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import ProductList from './products/ProductList';
 const exampleCard = {
   _id: "5b86e476a8228b3354bac2a4",
   category: "pokemon",
@@ -20,7 +20,8 @@ class AdminProducts extends Component {
     super(props);
     this.state = {
       searchAmount: 10,
-      page: 1
+      page: 1,
+      products: []
     };
     this.handleSearchChange = this.handleSearchChange.bind(this);
   }
@@ -28,7 +29,7 @@ class AdminProducts extends Component {
   handleSearchChange(event) {
       console.log(event.target.value);
     this.setState({
-      searchAmount: parseInt(event.target.value)
+      searchAmount: parseInt(event.target.value,10)
     });
   }
   render() {
@@ -55,6 +56,7 @@ class AdminProducts extends Component {
           <div className="col-lg-1" />
           <div className="col-lg-8" />
         </div>
+        <ProductList/>
       </div>
     );
   }
