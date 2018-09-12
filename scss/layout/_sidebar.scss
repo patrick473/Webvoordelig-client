@@ -1,6 +1,6 @@
 .sidebar{
     width:18rem;
-    background-color: $color-dark-shades;
+    background-color: $color-primary-bg;
     color: $color-white;
     font-size:1.3rem;
     font-weight: 500;
@@ -19,7 +19,7 @@
         &:link,
         &:visited{
             transition: all .2s;
-            border-bottom: 2px solid $color-light-accent;
+            border-bottom: 2px solid $color-primary-light;
             display:block;
             text-decoration: none;
             text-transform: capitalize;
@@ -27,7 +27,7 @@
         }
         &:hover{
             border-bottom: 2px solid $color-white;
-            color: $color-brand;
+            color: $color-primary;
             background-color:$color-white;
         }
     }

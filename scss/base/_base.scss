@@ -26,7 +26,7 @@ html {
 body {
     box-sizing: border-box;
     padding: 3rem;
-    background-color: $color-light-shades;
+    background-color: $color-bg;
     @include respond(tab-port) {
         padding: 0;
     }
@@ -34,6 +34,6 @@ body {
 
 //selection of text
 ::selection {
-    background-color: $color-brand;
+    background-color: $color-primary;
     color: $color-white;
 }

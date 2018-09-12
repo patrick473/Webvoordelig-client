@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import axios from "axios";
 import AdminProduct from "./Product";
+
 const exampleCard = {
   _id: "5b86e476a8228b3354bac2a4",
   category: "pokemon",
@@ -24,6 +25,8 @@ class ProductList extends PureComponent {
       currentProducts: [],
       amountofProducts: 0,
       queryAmount: 10,
+      queryBegin:1,
+      queryEnd:10,
       searchText: ""
     };
     this.handleSearchChange = this.handleSearchChange.bind(this);
@@ -75,7 +78,8 @@ class ProductList extends PureComponent {
             />
           </div>
         </div>
-        <div>
+
+        <div className="row">
         <table >
         <thead>
         <tr>
@@ -86,7 +90,28 @@ class ProductList extends PureComponent {
         <th>edit</th>
         <th>delete</th></tr>
         </thead>
+        <tbody>
+        <AdminProduct product={exampleCard} />
+        </tbody>
+        <tfoot>
+        <tr>
+        <th>name</th>
+        <th>category</th>
+        <th>price</th>
+        <th>amount</th>
+        <th>edit</th>
+        <th>delete</th></tr>
+        </tfoot>
         </table>
+        </div>
+        <div className="row">
+        <div className="col-lg-2">
+        Showing {this.state.queryBegin} to {this.state.queryEnd}
+        </div>
+        
+        <div className="col-lg-2">
+        Pagination
+        </div>
         </div>
       </div>
     );
