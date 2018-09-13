@@ -481,4 +481,56 @@ body {
   margin-top: 2rem;
   z-index: 400;
 }
+
+.admin-table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 1rem;
+  position: relative;
+}
+
+.admin-table * {
+  position: relative;
+}
+
+.admin-table td,
+.admin-table th {
+  padding-left: 8px;
+}
+
+.admin-table thead tr {
+  height: 60px;
+  background: #7ed56f;
+  font-size: 16px;
+}
+
+.admin-table tbody tr {
+  height: 48px;
+  border-bottom: 1px solid #28b485;
+  border-right: 1px solid #7ed56f;
+}
+
+.admin-table td,
+.admin-table th {
+  text-align: left;
+}
+
+.admin-table td.l,
+.admin-table th.l {
+  text-align: right;
+}
+
+.admin-table td.c,
+.admin-table th.c {
+  text-align: center;
+}
+
+.admin-table td.r,
+.admin-table th.r {
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */

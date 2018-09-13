@@ -1,6 +1,55 @@
-.section__content{
-    margin-left: $sidebar-width + 2rem;
-    margin-top: 2rem;
-    
-    z-index: 400;
+.section__content {
+  margin-left: $sidebar-width + 2rem;
+  margin-top: 2rem;
+
+  z-index: 400;
+}
+
+.admin-table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: $color-white;
+  border-radius: 6px;
+  overflow: hidden;
+
+  width: 100%;
+  margin: 0 1rem;
+
+  position: relative;
+
+  * {
+    position: relative;
+  }
+
+  td,
+  th {
+    padding-left: 8px;
+  }
+
+  thead tr {
+    height: 60px;
+    background: $color-primary-light;
+    font-size: 16px;
+  }
+
+  tbody tr {
+    height: 48px;
+    border-bottom: 1px solid $color-primary-dark;
+    border-right: 1px solid $color-primary-light;
+   
+  }
+
+  td,
+  th {
+    text-align: left;
+    &.l {
+      text-align: right;
+    }
+    &.c {
+      text-align: center;
+    }
+    &.r {
+      text-align: center;
+    }
+  }
 }

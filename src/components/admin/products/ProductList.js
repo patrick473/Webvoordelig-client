@@ -54,7 +54,7 @@ class ProductList extends PureComponent {
     return (
       <div>
         <div className="row u-margin-top-small">
-          <div className="col-lg-2">
+          <div className="col-lg-8">
             <label>Show </label>
             <select
               value={this.state.queryAmount}
@@ -80,7 +80,7 @@ class ProductList extends PureComponent {
         </div>
 
         <div className="row">
-        <table >
+        <table className="col-lg-12 admin-table" >
         <thead>
         <tr>
         <th>name</th>
@@ -91,6 +91,10 @@ class ProductList extends PureComponent {
         <th>delete</th></tr>
         </thead>
         <tbody>
+        <AdminProduct product={exampleCard} />
+        <AdminProduct product={exampleCard} />
+        <AdminProduct product={exampleCard} />
+        <AdminProduct product={exampleCard} />
         <AdminProduct product={exampleCard} />
         </tbody>
         <tfoot>
