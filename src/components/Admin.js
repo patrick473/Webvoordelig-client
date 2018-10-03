@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import AdminHeader from "./includes/AdminHeader";
-import {Route,Link} from "react-router-dom";
+import {Route} from "react-router-dom";
 
+import AdminHeader from "./includes/AdminHeader";
+import AdminSidenav from './includes/AdminSidenav';
 import AdminHome from './admin/AdminHome';
 import AdminProducts from './admin/AdminProducts';
-import AdminProductsNew from './admin/AdminProductsNew';
+import AdminProductsNew from './admin/products/ProductsNew';
+import AdminProductsEdit from './admin/products/EditProduct';
 import AdminCategories from './admin/AdminCategories';
 import AdminSales from './admin/AdminSales';
 import AdminStatistics from './admin/AdminStatistics';
@@ -14,23 +16,16 @@ class Admin extends Component {
     return (
       <div>
         <AdminHeader />
-
+        <AdminSidenav/>
       
-          <div className="sidebar">
-            <Link to="/admin" className="sidebar__item">Home</Link>
-            <Link to="/admin/products" className="sidebar__item">Producten Beheren</Link>
-            <Link to="/admin/categories" className="sidebar__item">Categoriëen beheren</Link>
-            <Link to="/admin/sales" className="sidebar__item">Verkoop</Link>
-            <Link to="/admin/statistics" className="sidebar__item">Statistieken</Link>
-            
-      
-        </div>
-        <div className="section__content">
+       
+        <div className="container">
           
             
                 <Route exact  path="/admin" component={AdminHome} />
                 <Route exact path="/admin/products" component={AdminProducts} />
                 <Route path="/admin/products/new" component={AdminProductsNew} />
+                <Route path="/admin/products/edit" component={AdminProductsEdit} />
                 <Route path="/admin/categories" component={AdminCategories} />
                 <Route path="/admin/sales" component={AdminSales} />
                 <Route path="/admin/statistics" component={AdminStatistics} />

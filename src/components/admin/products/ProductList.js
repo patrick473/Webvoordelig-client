@@ -53,9 +53,9 @@ class ProductList extends PureComponent {
   render() {
     return (
       <div>
-        <div className="row u-margin-top-small">
-          <div className="col-lg-8">
-            <label>Show </label>
+        <div className="row">
+          <div className="col l4 s4 m4 input-field">
+         
             <select
               value={this.state.queryAmount}
               onChange={this.handleQueryChange}
@@ -69,8 +69,8 @@ class ProductList extends PureComponent {
             </select>
             <label> entries</label>
           </div>
-          <div className="col-lg-2">
-            <label>Search: </label>
+          <div className="col s8 m8 l8 input-field">
+            <label>Searchterm </label>
             <input
               type="search"
               value={this.state.searchText}
@@ -80,15 +80,15 @@ class ProductList extends PureComponent {
         </div>
 
         <div className="row">
-        <table className="col-lg-12 admin-table" >
+        <table className="highlight" >
         <thead>
         <tr>
         <th>name</th>
         <th>category</th>
         <th>price</th>
         <th>amount</th>
-        <th>edit</th>
-        <th>delete</th></tr>
+        <th></th>
+        <th></th></tr>
         </thead>
         <tbody>
         <AdminProduct product={exampleCard} />
@@ -103,8 +103,8 @@ class ProductList extends PureComponent {
         <th>category</th>
         <th>price</th>
         <th>amount</th>
-        <th>edit</th>
-        <th>delete</th></tr>
+        <th></th>
+        <th></th></tr>
         </tfoot>
         </table>
         </div>

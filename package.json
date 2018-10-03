@@ -5,6 +5,9 @@
   "dependencies": {
     "@drewbot/sass-flexbox-grid": "^2.0.7",
     "axios": "^0.18.0",
+    "material-icons": "^0.2.3",
+    "materialize-css": "^1.0.0",
+    "query-string": "^6.1.0",
     "react": "^16.4.2",
     "react-body": "^0.2.0",
     "react-dom": "^16.4.2",

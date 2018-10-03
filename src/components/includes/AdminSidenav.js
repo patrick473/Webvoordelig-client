@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import {Link} from 'react-router-dom';
-class Header extends Component {
+
+class Sidenav extends Component {
   render() {
+   
+    
     return (
 
-      <nav>
-        <div className="nav-wrapper">
-          <a  data-target="mobile-nav" className="sidenav-trigger"><i className="material-icons">menu</i></a>
-          <div className="brand-logo right">Webvoordelig Admin Panel</div>
-          <ul  className="left hide-on-med-and-down">
+          <ul  id="mobile-nav" className="sidenav">
             <li>
               <Link to="/admin" className="sidebar__item">
                 Home
@@ -35,13 +34,9 @@ class Header extends Component {
               </Link>
             </li>
           </ul>
-        
-        </div>
-      </nav>
-
-
+       
     );
   }
 }
 
-export default Header;
+export default Sidenav;
