@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import brush24 from '../../../assets/brush24.svg';
-import delete24 from '../../../assets/delete24.svg';
+
 import {Link} from "react-router-dom";
 class AdminProduct extends Component {
     constructor(props) {
