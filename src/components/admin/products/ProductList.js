@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import axios from "axios";
 import AdminProduct from "./Product";
+import * as Materialize from 'materialize-css'
 
 const exampleCard = {
   _id: "5b86e476a8228b3354bac2a4",
@@ -51,6 +52,8 @@ class ProductList extends PureComponent {
     });
   }
   render() {
+    var selects = document.querySelectorAll('select');
+    Materialize.FormSelect.init(selects);
     return (
       <div>
         <div className="row">

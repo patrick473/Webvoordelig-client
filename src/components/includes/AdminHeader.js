@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import {Link} from 'react-router-dom';
+
 class Header extends Component {
   render() {
+
     return (
 
       <nav>
-        <div className="nav-wrapper">
+        <div className="nav-wrapper teal lighten-1">
           <a  data-target="mobile-nav" className="sidenav-trigger"><i className="material-icons">menu</i></a>
           <div className="brand-logo right">Webvoordelig Admin Panel</div>
           <ul  className="left hide-on-med-and-down">

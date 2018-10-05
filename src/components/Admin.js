@@ -10,9 +10,11 @@ import AdminProductsEdit from './admin/products/EditProduct';
 import AdminCategories from './admin/AdminCategories';
 import AdminSales from './admin/AdminSales';
 import AdminStatistics from './admin/AdminStatistics';
-
+import * as Materialize from 'materialize-css';
 class Admin extends Component {
   render() {
+    var sidenavs = document.querySelectorAll('.sidenav');
+    Materialize.Sidenav.init(sidenavs);
     return (
       <div>
         <AdminHeader />
